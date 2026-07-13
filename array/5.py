@@ -1,0 +1,10 @@
+from array import *
+
+val = array('i', [1,2,3,4,5,6,7,8,9])
+
+#reversing
+a = val[::-1]
+
+#simple printing using for loop
+for i in range(len(a)):
+    print(a[i], end=" ")
