@@ -9,3 +9,13 @@ for x in a:
 for x in b:
     if b[x]>1:
         print(x)    
+
+#Find all duplicate elements in a list. (sets)
+seen = set()
+duplicate = set()
+for x in a:
+    if x in seen:
+        duplicate.add(x)
+    else:
+        seen.add(x)
+print(duplicate)
