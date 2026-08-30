@@ -15,8 +15,8 @@ print("Maximum sum:", maximum)
 
 win_sum = sum(a[:k])
 m = win_sum
-for r in range(len(a)-k+1):
+for r in range(k, len(a)):
     win_sum += a[r]
     win_sum -= a[r-k]
-    m = max(m,win_sum)
+    m = max(m, win_sum)
 print(m)
