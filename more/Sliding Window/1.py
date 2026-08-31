@@ -1,4 +1,4 @@
-#Find the maximum sum of a subarray of size k.
+#Find the maximum sum of a subarray of size k. (fixed size of k)
 a = list(map(int, input("Enter an array separated by space: ").split()))
 k = 3
 maximum = float("-inf")
@@ -11,7 +11,7 @@ for i in range(0, len(a) - k + 1):
 print("(", b, "),(", c, "),(", d, ")")
 print("Maximum sum:", maximum)
 
-#sliding window approach (for nerds)
+#sliding window approach (for nerds and variable size of k)
 
 win_sum = sum(a[:k])
 m = win_sum
