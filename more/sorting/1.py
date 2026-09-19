@@ -1,8 +1,11 @@
 #Implement bubble sort without using sort().
 a = list(map(int, input("Enter the list: ").split()))
 n = len(a)
-for i in range(n-1):
-    for j in range(n-i-1):
-        if a[j]>a[j+1]:
-            a[j], a[j+1] = a[j+1], a[j]
+Flag = True
+while Flag:
+    Flag = False
+    for i in range(1, n):
+        if a[i-1]>a[i]:
+            a[i-1], a[i] = a[i], a[i-1]
+            Flag = True
 print(a)
